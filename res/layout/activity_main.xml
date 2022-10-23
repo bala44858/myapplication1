@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#663680">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="MSgoals"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintBaseline_toTopOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#A669EC"
+            android:padding="5dp"
+            android:text="login"
+            android:textColor="@color/white"
+            android:textSize="19dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </Button>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/goalpic"
+            >
+        </ImageView>
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lets Track"
+            android:backgroundTint="#7A50AA"
+
+            >
+
+        </Button>
+        <TextView
+            android:textSize="20sp"
+            android:padding="10sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:background="@drawable/bg_curve"
+            android:layout_height="wrap_content"
+            android:text="Here! you can tack you all goals "
+        >
+
+        </TextView>
+
+        <TextView
+            android:textSize="20sp"
+            android:padding="10sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:background="@drawable/bg_curve"
+            android:layout_height="wrap_content"
+            android:text="keep Consistency.. "
+            >
+        </TextView>
+    </LinearLayout>
+
+
+
+</LinearLayout>
